@@ -44,7 +44,7 @@ private fun Context.getReceiver(isLockScreen: Boolean): PendingIntent {
         this,
         0,
         NotificationReceiver.build(this, isLockScreen),
-        0
+        PendingIntent.FLAG_IMMUTABLE
     )
 }
 
